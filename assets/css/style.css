@@ -818,7 +818,7 @@ ul { list-style: none; }
 .footer-bottom a { color: rgba(255,255,255,0.4); transition: color var(--transition); }
 .footer-bottom a:hover { color: var(--red); }
 
-/* === PRODUCT GALLERY STRIP (lightbox thumbnails) === */
+/* === PRODUCT GALLERY STRIP (fancybox thumbnails) === */
 .product-gallery-strip {
   display: flex;
   gap: 6px;
@@ -839,7 +839,7 @@ ul { list-style: none; }
   cursor: zoom-in;
 }
 .product-gallery-strip a:hover { border-color: var(--red); opacity: 1; }
-.product-gallery-strip a.lb-current { border-color: var(--red); }
+.product-gallery-strip a.fb-current { border-color: var(--red); }
 .product-gallery-strip img {
   width: 100%;
   height: 100%;
