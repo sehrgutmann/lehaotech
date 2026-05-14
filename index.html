@@ -24,12 +24,26 @@
         <li><a href="amazon.html">Amazon Store</a></li>
       </ul>
     </nav>
-
+    <div class="lang-switcher">
+      <a href="index.html" class="lang-btn active" aria-current="true">EN</a>
+      <span class="lang-sep">|</span>
+      <a href="index-ja.html" class="lang-btn">JP</a>
+    </div>
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
+
+<!-- Japanese language suggestion banner -->
+<div id="ja-suggestion" class="lang-banner" style="display:none;" role="banner">
+  <div class="container">
+    <span>🇯🇵 日本語ページはこちら</span>
+    <a href="index-ja.html">日本語で見る →</a>
+    <button class="lang-banner-close" onclick="document.getElementById('ja-suggestion').style.display='none'" aria-label="閉じる">✕</button>
+  </div>
+</div>
+<script>if(typeof navigator!=='undefined'&&navigator.language&&navigator.language.startsWith('ja')){document.getElementById('ja-suggestion').style.display='block';}</script>
 
 <!-- ========== HERO ========== -->
 <section class="hero" aria-label="Hero">
