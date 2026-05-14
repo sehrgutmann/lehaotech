@@ -818,6 +818,37 @@ ul { list-style: none; }
 .footer-bottom a { color: rgba(255,255,255,0.4); transition: color var(--transition); }
 .footer-bottom a:hover { color: var(--red); }
 
+/* === PRODUCT GALLERY STRIP (lightbox thumbnails) === */
+.product-gallery-strip {
+  display: flex;
+  gap: 6px;
+  padding: 8px 10px;
+  background: var(--gray-light);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.product-gallery-strip a {
+  display: block;
+  width: 62px;
+  height: 62px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: border-color var(--transition), opacity var(--transition);
+  flex-shrink: 0;
+  cursor: zoom-in;
+}
+.product-gallery-strip a:hover { border-color: var(--red); opacity: 1; }
+.product-gallery-strip a.lb-current { border-color: var(--red); }
+.product-gallery-strip img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.product-gallery-strip a:hover img { transform: scale(1.08); }
+
 /* === UTILITIES === */
 .text-red { color: var(--red); }
 .mt-8 { margin-top: 8px; }
