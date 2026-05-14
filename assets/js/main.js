@@ -12,7 +12,6 @@
     toggle.setAttribute('aria-expanded', open);
   });
 
-  // Close on link click (mobile)
   nav.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', function () {
       nav.classList.remove('open');
@@ -21,7 +20,6 @@
     });
   });
 
-  // Close on outside click
   document.addEventListener('click', function (e) {
     if (!nav.contains(e.target) && !toggle.contains(e.target)) {
       nav.classList.remove('open');
